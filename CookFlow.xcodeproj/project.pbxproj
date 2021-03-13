@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		709CAEEE25FD1CFD00542681 /* CookFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAEED25FD1CFD00542681 /* CookFlowApp.swift */; };
+		709CAEF025FD1CFD00542681 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAEEF25FD1CFD00542681 /* ContentView.swift */; };
+		709CAEF225FD1CFD00542681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709CAEF125FD1CFD00542681 /* Assets.xcassets */; };
+		709CAEF525FD1CFD00542681 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709CAEF425FD1CFD00542681 /* Preview Assets.xcassets */; };
+		709CAF0025FD1CFD00542681 /* CookFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAEFF25FD1CFD00542681 /* CookFlowTests.swift */; };
+		709CAF0B25FD1CFD00542681 /* CookFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF0A25FD1CFD00542681 /* CookFlowUITests.swift */; };
+		709CAF2F25FD1E3300542681 /* StateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF2C25FD1E3300542681 /* StateStore.swift */; };
+		709CAF3025FD1E3300542681 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF2D25FD1E3300542681 /* ViewState.swift */; };
+		709CAF3125FD1E3300542681 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF2E25FD1E3300542681 /* TestState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		709CAEFC25FD1CFD00542681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 709CAEE225FD1CFD00542681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 709CAEE925FD1CFD00542681;
+			remoteInfo = CookFlow;
+		};
+		709CAF0725FD1CFD00542681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 709CAEE225FD1CFD00542681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 709CAEE925FD1CFD00542681;
+			remoteInfo = CookFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		709CAEEA25FD1CFD00542681 /* CookFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		709CAEED25FD1CFD00542681 /* CookFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookFlowApp.swift; sourceTree = "<group>"; };
+		709CAEEF25FD1CFD00542681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		709CAEF125FD1CFD00542681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		709CAEF425FD1CFD00542681 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		709CAEF625FD1CFD00542681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709CAEFB25FD1CFD00542681 /* CookFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		709CAEFF25FD1CFD00542681 /* CookFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookFlowTests.swift; sourceTree = "<group>"; };
+		709CAF0125FD1CFD00542681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709CAF0625FD1CFD00542681 /* CookFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		709CAF0A25FD1CFD00542681 /* CookFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookFlowUITests.swift; sourceTree = "<group>"; };
+		709CAF0C25FD1CFD00542681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709CAF2C25FD1E3300542681 /* StateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateStore.swift; sourceTree = "<group>"; };
+		709CAF2D25FD1E3300542681 /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		709CAF2E25FD1E3300542681 /* TestState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		709CAEE725FD1CFD00542681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709CAEF825FD1CFD00542681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709CAF0325FD1CFD00542681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		709CAEE125FD1CFD00542681 = {
+			isa = PBXGroup;
+			children = (
+				709CAEEC25FD1CFD00542681 /* CookFlow */,
+				709CAEFE25FD1CFD00542681 /* CookFlowTests */,
+				709CAF0925FD1CFD00542681 /* CookFlowUITests */,
+				709CAEEB25FD1CFD00542681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		709CAEEB25FD1CFD00542681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				709CAEEA25FD1CFD00542681 /* CookFlow.app */,
+				709CAEFB25FD1CFD00542681 /* CookFlowTests.xctest */,
+				709CAF0625FD1CFD00542681 /* CookFlowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		709CAEEC25FD1CFD00542681 /* CookFlow */ = {
+			isa = PBXGroup;
+			children = (
+				709CAEED25FD1CFD00542681 /* CookFlowApp.swift */,
+				709CAEEF25FD1CFD00542681 /* ContentView.swift */,
+				709CAF2C25FD1E3300542681 /* StateStore.swift */,
+				709CAF2E25FD1E3300542681 /* TestState.swift */,
+				709CAF2D25FD1E3300542681 /* ViewState.swift */,
+				709CAEF125FD1CFD00542681 /* Assets.xcassets */,
+				709CAEF625FD1CFD00542681 /* Info.plist */,
+				709CAEF325FD1CFD00542681 /* Preview Content */,
+			);
+			path = CookFlow;
+			sourceTree = "<group>";
+		};
+		709CAEF325FD1CFD00542681 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				709CAEF425FD1CFD00542681 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		709CAEFE25FD1CFD00542681 /* CookFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				709CAEFF25FD1CFD00542681 /* CookFlowTests.swift */,
+				709CAF0125FD1CFD00542681 /* Info.plist */,
+			);
+			path = CookFlowTests;
+			sourceTree = "<group>";
+		};
+		709CAF0925FD1CFD00542681 /* CookFlowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				709CAF0A25FD1CFD00542681 /* CookFlowUITests.swift */,
+				709CAF0C25FD1CFD00542681 /* Info.plist */,
+			);
+			path = CookFlowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		709CAEE925FD1CFD00542681 /* CookFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709CAF0F25FD1CFD00542681 /* Build configuration list for PBXNativeTarget "CookFlow" */;
+			buildPhases = (
+				709CAEE625FD1CFD00542681 /* Sources */,
+				709CAEE725FD1CFD00542681 /* Frameworks */,
+				709CAEE825FD1CFD00542681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookFlow;
+			productName = CookFlow;
+			productReference = 709CAEEA25FD1CFD00542681 /* CookFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		709CAEFA25FD1CFD00542681 /* CookFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709CAF1225FD1CFD00542681 /* Build configuration list for PBXNativeTarget "CookFlowTests" */;
+			buildPhases = (
+				709CAEF725FD1CFD00542681 /* Sources */,
+				709CAEF825FD1CFD00542681 /* Frameworks */,
+				709CAEF925FD1CFD00542681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709CAEFD25FD1CFD00542681 /* PBXTargetDependency */,
+			);
+			name = CookFlowTests;
+			productName = CookFlowTests;
+			productReference = 709CAEFB25FD1CFD00542681 /* CookFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		709CAF0525FD1CFD00542681 /* CookFlowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709CAF1525FD1CFD00542681 /* Build configuration list for PBXNativeTarget "CookFlowUITests" */;
+			buildPhases = (
+				709CAF0225FD1CFD00542681 /* Sources */,
+				709CAF0325FD1CFD00542681 /* Frameworks */,
+				709CAF0425FD1CFD00542681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709CAF0825FD1CFD00542681 /* PBXTargetDependency */,
+			);
+			name = CookFlowUITests;
+			productName = CookFlowUITests;
+			productReference = 709CAF0625FD1CFD00542681 /* CookFlowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		709CAEE225FD1CFD00542681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					709CAEE925FD1CFD00542681 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					709CAEFA25FD1CFD00542681 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 709CAEE925FD1CFD00542681;
+					};
+					709CAF0525FD1CFD00542681 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 709CAEE925FD1CFD00542681;
+					};
+				};
+			};
+			buildConfigurationList = 709CAEE525FD1CFD00542681 /* Build configuration list for PBXProject "CookFlow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 709CAEE125FD1CFD00542681;
+			productRefGroup = 709CAEEB25FD1CFD00542681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				709CAEE925FD1CFD00542681 /* CookFlow */,
+				709CAEFA25FD1CFD00542681 /* CookFlowTests */,
+				709CAF0525FD1CFD00542681 /* CookFlowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		709CAEE825FD1CFD00542681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709CAEF525FD1CFD00542681 /* Preview Assets.xcassets in Resources */,
+				709CAEF225FD1CFD00542681 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709CAEF925FD1CFD00542681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709CAF0425FD1CFD00542681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		709CAEE625FD1CFD00542681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709CAEF025FD1CFD00542681 /* ContentView.swift in Sources */,
+				709CAEEE25FD1CFD00542681 /* CookFlowApp.swift in Sources */,
+				709CAF3025FD1E3300542681 /* ViewState.swift in Sources */,
+				709CAF2F25FD1E3300542681 /* StateStore.swift in Sources */,
+				709CAF3125FD1E3300542681 /* TestState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709CAEF725FD1CFD00542681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709CAF0025FD1CFD00542681 /* CookFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709CAF0225FD1CFD00542681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709CAF0B25FD1CFD00542681 /* CookFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		709CAEFD25FD1CFD00542681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 709CAEE925FD1CFD00542681 /* CookFlow */;
+			targetProxy = 709CAEFC25FD1CFD00542681 /* PBXContainerItemProxy */;
+		};
+		709CAF0825FD1CFD00542681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 709CAEE925FD1CFD00542681 /* CookFlow */;
+			targetProxy = 709CAF0725FD1CFD00542681 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		709CAF0D25FD1CFD00542681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		709CAF0E25FD1CFD00542681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		709CAF1025FD1CFD00542681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CookFlow/Preview Content\"";
+				DEVELOPMENT_TEAM = 6W8CX4WCWH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CookFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krupichko.CookFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		709CAF1125FD1CFD00542681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CookFlow/Preview Content\"";
+				DEVELOPMENT_TEAM = 6W8CX4WCWH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CookFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krupichko.CookFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		709CAF1325FD1CFD00542681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W8CX4WCWH;
+				INFOPLIST_FILE = CookFlowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krupichko.CookFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookFlow.app/CookFlow";
+			};
+			name = Debug;
+		};
+		709CAF1425FD1CFD00542681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W8CX4WCWH;
+				INFOPLIST_FILE = CookFlowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krupichko.CookFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookFlow.app/CookFlow";
+			};
+			name = Release;
+		};
+		709CAF1625FD1CFD00542681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W8CX4WCWH;
+				INFOPLIST_FILE = CookFlowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krupichko.CookFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CookFlow;
+			};
+			name = Debug;
+		};
+		709CAF1725FD1CFD00542681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W8CX4WCWH;
+				INFOPLIST_FILE = CookFlowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krupichko.CookFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CookFlow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		709CAEE525FD1CFD00542681 /* Build configuration list for PBXProject "CookFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709CAF0D25FD1CFD00542681 /* Debug */,
+				709CAF0E25FD1CFD00542681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709CAF0F25FD1CFD00542681 /* Build configuration list for PBXNativeTarget "CookFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709CAF1025FD1CFD00542681 /* Debug */,
+				709CAF1125FD1CFD00542681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709CAF1225FD1CFD00542681 /* Build configuration list for PBXNativeTarget "CookFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709CAF1325FD1CFD00542681 /* Debug */,
+				709CAF1425FD1CFD00542681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709CAF1525FD1CFD00542681 /* Build configuration list for PBXNativeTarget "CookFlowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709CAF1625FD1CFD00542681 /* Debug */,
+				709CAF1725FD1CFD00542681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 709CAEE225FD1CFD00542681 /* Project object */;
+}
