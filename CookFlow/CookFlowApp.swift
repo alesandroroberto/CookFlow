@@ -6,19 +6,25 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
 struct MelnikKitchenApp: App {
-    @StateObject var state = TestViewState(
-        initialState: .initial,
-        reducer: testReducer,
-        runSideEffect: sideEffectConverter
-    )
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(state)
+            NavigationView {
+                RecipeView(
+                    state: .init(
+                        initialState: .initial,
+                        reducer: recipeReducer,
+                        runSideEffect: recipeSideEffects(load: { _ in Future { promise in
+                            promise(.success(.testRecipePage))
+                        }
+                        })
+                    )
+                ).navigationBarTitle(Text("Рецепты"))
+            }
         }
     }
 }
