@@ -12,9 +12,15 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    uses: sersoft-gmbh/xcodebuild-action@v1
-      with:
-        project: CookFlow.xcodeproj
-        scheme: CookFlow
-        destination: platform=iOS
-        action: test
+    # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Runs the Super-Linter action
+      - name: Run tests
+        uses: sersoft-gmbh/xcodebuild-action@v1
+        with:
+          project: CookFlow.xcodeproj
+          scheme: CookFlow
+          destination: platform=iOS
+          action: test
