@@ -22,5 +22,5 @@ jobs:
         with:
           project: CookFlow.xcodeproj
           scheme: CookFlow
-          destination: platform=iOS
+          destination: platform=iOS Simulator,id:814F8FDE-8450-436A-AC44-58772B31A6C0
           action: test
