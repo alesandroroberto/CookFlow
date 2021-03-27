@@ -12,8 +12,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    uses: sersoft-gmbh/xcodebuild-action@v1
+      with:
+        project: CookFlow.xcodeproj
+        scheme: CookFlow
+        destination: platform=iOS
+        action: test
