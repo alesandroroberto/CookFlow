@@ -1,0 +1,26 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Runs the Super-Linter action
+      - name: Run tests
+        uses: sersoft-gmbh/xcodebuild-action@v1
+        with:
+          project: CookFlow.xcodeproj
+          scheme: CookFlow
+          destination: platform=iOS Simulator,id=814F8FDE-8450-436A-AC44-58772B31A6C0
+          action: test
