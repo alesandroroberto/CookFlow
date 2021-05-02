@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334F7E5C263EA2F900943D3C /* CatalogStateTemlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F7E58263EA2F900943D3C /* CatalogStateTemlate.swift */; };
+		334F7E5D263EA2F900943D3C /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F7E59263EA2F900943D3C /* CatalogView.swift */; };
+		334F7E5E263EA2F900943D3C /* CatalogState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F7E5A263EA2F900943D3C /* CatalogState.swift */; };
+		334F7E5F263EA2F900943D3C /* CatalogViewConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F7E5B263EA2F900943D3C /* CatalogViewConverter.swift */; };
 		709CAEEE25FD1CFD00542681 /* CookFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAEED25FD1CFD00542681 /* CookFlowApp.swift */; };
 		709CAEF225FD1CFD00542681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709CAEF125FD1CFD00542681 /* Assets.xcassets */; };
 		709CAEF525FD1CFD00542681 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709CAEF425FD1CFD00542681 /* Preview Assets.xcassets */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		334F7E58263EA2F900943D3C /* CatalogStateTemlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogStateTemlate.swift; sourceTree = "<group>"; };
+		334F7E59263EA2F900943D3C /* CatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		334F7E5A263EA2F900943D3C /* CatalogState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogState.swift; sourceTree = "<group>"; };
+		334F7E5B263EA2F900943D3C /* CatalogViewConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewConverter.swift; sourceTree = "<group>"; };
 		709CAEEA25FD1CFD00542681 /* CookFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709CAEED25FD1CFD00542681 /* CookFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookFlowApp.swift; sourceTree = "<group>"; };
 		709CAEF125FD1CFD00542681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334F7E57263EA2E300943D3C /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				334F7E5A263EA2F900943D3C /* CatalogState.swift */,
+				334F7E58263EA2F900943D3C /* CatalogStateTemlate.swift */,
+				334F7E59263EA2F900943D3C /* CatalogView.swift */,
+				334F7E5B263EA2F900943D3C /* CatalogViewConverter.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
 		709CAEE125FD1CFD00542681 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				CABD4193260685BE0017389A /* Design */,
+				334F7E57263EA2E300943D3C /* Catalog */,
 				CABD418026064CDC0017389A /* Recipe */,
 				709CAEED25FD1CFD00542681 /* CookFlowApp.swift */,
 				709CAF2C25FD1E3300542681 /* StateStore.swift */,
@@ -313,7 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334F7E5C263EA2F900943D3C /* CatalogStateTemlate.swift in Sources */,
+				334F7E5D263EA2F900943D3C /* CatalogView.swift in Sources */,
 				CABD41B0260686D80017389A /* SmallPhotosGrid.swift in Sources */,
+				334F7E5F263EA2F900943D3C /* CatalogViewConverter.swift in Sources */,
 				CABD418226064D280017389A /* RecipeView.swift in Sources */,
 				CABD4187260653550017389A /* RecipeState.swift in Sources */,
 				CABD41B8260687F70017389A /* RecipeViewConverter.swift in Sources */,
@@ -324,6 +347,7 @@
 				709CAF3025FD1E3300542681 /* ViewState.swift in Sources */,
 				709CAF2F25FD1E3300542681 /* StateStore.swift in Sources */,
 				709CAF3125FD1E3300542681 /* TestState.swift in Sources */,
+				334F7E5E263EA2F900943D3C /* CatalogState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

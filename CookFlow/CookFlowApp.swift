@@ -14,16 +14,16 @@ struct MelnikKitchenApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                RecipeView(
+                CatalogView(
                     state: .init(
                         initialState: .initial,
-                        reducer: recipeReducer,
-                        runSideEffect: recipeSideEffects(load: { _ in Future { promise in
-                            promise(.success(.testRecipePage))
+                        reducer: catalogReducer,
+                        runSideEffect: catalogSideEffects(load: { _ in Future { promise in
+                            promise(.success(.testCatalogPage))
                         }
                         })
                     )
-                ).navigationBarTitle(Text("Рецепты"))
+                )
             }
         }
     }
