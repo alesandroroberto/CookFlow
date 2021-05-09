@@ -13,18 +13,19 @@ struct MelnikKitchenApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                RecipeView(
-                    state: .init(
-                        initialState: .initial,
-                        reducer: recipeReducer,
-                        runSideEffect: recipeSideEffects(load: { _ in Future { promise in
-                            promise(.success(.testRecipePage))
-                        }
-                        })
-                    )
-                ).navigationBarTitle(Text("Рецепты"))
-            }
+            ProgressView()
+//            NavigationView {
+//                RecipeView(
+//                    state: .init(
+//                        initialState: .initial,
+//                        reducer: recipeReducer,
+//                        runSideEffect: recipeSideEffects(load: { _ in Future { promise in
+//                            promise(.success(.testRecipePage))
+//                        }
+//                        })
+//                    )
+//                ).navigationBarTitle(Text("Рецепты"))
+//            }
         }
     }
 }

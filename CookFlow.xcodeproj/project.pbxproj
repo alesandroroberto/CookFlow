@@ -15,6 +15,7 @@
 		709CAF2F25FD1E3300542681 /* StateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF2C25FD1E3300542681 /* StateStore.swift */; };
 		709CAF3025FD1E3300542681 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF2D25FD1E3300542681 /* ViewState.swift */; };
 		709CAF3125FD1E3300542681 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CAF2E25FD1E3300542681 /* TestState.swift */; };
+		CA112D072646B8830079F065 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA112D062646B8830079F065 /* ProgressView.swift */; };
 		CABD418226064D280017389A /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD418126064D280017389A /* RecipeView.swift */; };
 		CABD4187260653550017389A /* RecipeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD4186260653550017389A /* RecipeState.swift */; };
 		CABD418C260673960017389A /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD418B260673960017389A /* RemoteImage.swift */; };
@@ -57,6 +58,7 @@
 		709CAF2C25FD1E3300542681 /* StateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateStore.swift; sourceTree = "<group>"; };
 		709CAF2D25FD1E3300542681 /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		709CAF2E25FD1E3300542681 /* TestState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestState.swift; sourceTree = "<group>"; };
+		CA112D062646B8830079F065 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		CABD418126064D280017389A /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		CABD4186260653550017389A /* RecipeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeState.swift; sourceTree = "<group>"; };
 		CABD418B260673960017389A /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				CABD418B260673960017389A /* RemoteImage.swift */,
 				CABD41AF260686D80017389A /* SmallPhotosGrid.swift */,
+				CA112D062646B8830079F065 /* ProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				CABD4187260653550017389A /* RecipeState.swift in Sources */,
 				CABD41B8260687F70017389A /* RecipeViewConverter.swift in Sources */,
 				CABD4195260685D70017389A /* Text+Extensions.swift in Sources */,
+				CA112D072646B8830079F065 /* ProgressView.swift in Sources */,
 				CABD418C260673960017389A /* RemoteImage.swift in Sources */,
 				709CAEEE25FD1CFD00542681 /* CookFlowApp.swift in Sources */,
 				CABD41BD260688210017389A /* RecipeStateTemplate.swift in Sources */,
